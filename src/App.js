@@ -1,12 +1,15 @@
 import logo from "./logo.svg";
 import "./App.css";
+import Landing from "./pages/Landing.js";
+import Footer from "./Footer";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>welcome</h1>
+        <Landing />
       </header>
+      <Footer />
     </div>
   );
 }
