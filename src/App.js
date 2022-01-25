@@ -1,16 +1,18 @@
-import logo from "./logo.svg";
-import "./App.css";
+import { Route, Switch } from "react-router-dom";
+import React from "react";
 import Landing from "./pages/Landing.js";
+import Home from "./pages/Home.js";
 import Footer from "./Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Landing />
-      </header>
+    <>
+      <Switch>
+        <Route path="/" exact component={Landing} />
+        <Route path="/Home" component={Home} />
+      </Switch>
       <Footer />
-    </div>
+    </>
   );
 }
 

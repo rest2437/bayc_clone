@@ -3,7 +3,7 @@ import React from "react";
 function Navbar() {
   return (
     <div>
-      <h1>hello</h1>
+      <h1>Navbar</h1>
     </div>
   );
 }
